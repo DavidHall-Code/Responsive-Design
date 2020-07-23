@@ -29,6 +29,8 @@ body{
     background-size: cover;
 }
 
+   
+
 html{
     font-size: 62.5%;
     width: 800px;
@@ -153,8 +155,12 @@ footer{
 }
 
 
-
-
-
-
+@media(max-width: 800px){
+    html{
+        width: 100%;
+    }
+    .sectionOne p{
+        width: 35vw; 
+    }
+}
 
