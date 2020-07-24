@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David M Hall Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style\index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    
-    <header>
-        <h1 id="name">David M Hall</h1>
-     
-       <!-- Setting up navigation links -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <section class="sectionOne">
-            <div class="alignText">
-                <div id="align">
-                    <h2>Welcome</h2>
+    <head>
+        <!-- Setting Viewport -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+              
+        <title>David M Hall Portfolio</title>
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <h1 id="name">David M. Hall</h1>
+        
+            <!-- Navigation top of page -->
+            <nav>
+                <a id="nav-home" class="a-nolink">Home</a>
+                <a id="nav-about" href="about.html">About</a>
+                <a id="nav-contact" href="contact.html"class="a-contact">Contact</a>
+                <a id="nav-project" class="a-projects" href="projects.html">Projects</a>    
+            </nav>
+        
+        
+        </header>
+        <div id="content">
+            <section id="section-introduction">
+                <div id="introduction">
+                    <img id="photo" alt="David M. Hall"
+                         src="assets/me.jpg"
+                         srcset="assets/me.jpg 369w, assets/me.jpg 276w, assets/me.jpg 156w" />
+                    <div id="introduction-text">
+                        <h2>David M. Hall</h2>
+                        <a class="a-projects" href="projects.html">
+                            My Projects</a>
+                        <p>My name is David Hall from Waterville, Maine. Welcome to my portfolio. 
+                        I am currently a Fullstack Web Development Student at Lambda School.</p>
+                    </div>
                 </div>
-                <p>Hello, My name is David Hall from Waterville, Maine. Welcome to my 
-                portfolio. I am currently a Fullstack Web Development Student at Lambda School.</p>
+                
+                <!-- Code for project images -->
+                <div id="featured-projects">
+                    <figure>
+                        <img alt="Image of the project" src="assets/yoda.jpg">         
+                        <figcaption>Title of A</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/r2d2.jpg">
+                        <figcaption>Project</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/yoda.jpg">
+                        <figcaption>Might Go</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/r2d2.jpg">
+                        <figcaption>Right Here</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/yoda.jpg">
+                        <figcaption>Cool Thing</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/r2d2.jpg">
+                        <figcaption>Fun Thing</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/yoda.jpg">
+                        <figcaption>Spicy Thing</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img alt="Image of the project" src="assets/yoda.jpg">
+                        <figcaption>Special Thing</figcaption>
+                    </figure>
+
+                </div>
+            </section>
+        </div>
+        <footer>
+            <h2>Intrested in working together?</h2>
+            <div>
+                <a href="contact.html" class="a-contact">Contact Me</a>
             </div>
 
-           <!-- Image of me -->
-            <img id="myImg" src="assets/me.jpg" alt="My Photo">
-        </section>
-
-        <!-- Section to place images, utilzing randoms as place holders -->
-        <section class="images">
-            <img src="https://picsum.photos/200" alt="random">
-            <img src="https://picsum.photos/200" alt="random">
-            <img src="https://picsum.photos/200" alt="random">
-            <img src="https://picsum.photos/200" alt="random">
-            <img src="https://picsum.photos/200" alt="random">
-            <img src="https://picsum.photos/200" alt="random">
-        </section>
-
-    </div>
-
-    <footer>
-        <div class="contactMe">
-            <h3>Intrested in working together?</h3>
-            <a id="contactMe" href="contact.html">Contact Me</a>
-        </div>
-    </footer>
-             
-</body>
+            <!-- Links for social media -->
+            <div>
+                <a href="https://linkedin.com" class="a-social">
+                    <img alt="Look me up on LinkedIn"
+                         src="assets/linkedin-48.svg">
+                </a>
+                <a href="https://facebook.com" class="a-social">
+                    <img alt="Look me up on Facebook"
+                         src="assets/facebook-48.svg"></a>
+            </div>
+        </footer>
+    </body>
 </html>
