@@ -1,0 +1,233 @@
+/* Add CSS styling here */
+
+* {
+  color: black;
+}
+
+body{
+  background-image:url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #003171;
+  padding: 2rem;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+h1 {
+  color: yellow;
+  font-family: 'Sail', cursive;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid yellow;
+  color: yellow;
+  background-color: #003171;
+  width: 10rem;
+  text-align: center;
+}
+
+.a-nolink {
+  color: #003171;
+  background-color: yellow;
+  border-color: #003171;
+}
+
+header nav {
+  display: flex;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+#content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#introduction {
+  display: flex;
+}
+
+#photo {
+  height: 33.333%;
+  width: 25%;
+    
+}
+
+#introduction-text {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 10%;
+}
+
+#introduction-text > * {
+  margin-top: 2rem;
+}
+
+/* Added to adjust for text */
+#introduction-text p{
+  color: yellow;
+  background-color: #003171;
+  
+}
+
+h2 {
+  color: yellow;
+  background-color: #003171;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#featured-projects figure {
+  width: 22.5%;
+  text-align: center;
+}
+
+#featured-projects figure img {
+  width: 99.999%;
+  
+}
+
+#featured-projects figure figcaption {
+  margin: 0.25rem 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #003171;
+  background-color: yellow;
+}
+
+footer {
+  background: #003171;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h2{
+  color: yellow;
+}
+
+footer > * {
+  margin: 1rem;
+}
+
+.a-social {
+  background-color: inherit;
+  padding: 0;
+  border: 0
+}
+
+.a-social img {
+  height: 2rem;
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #photo {
+    height: 53.333;
+    width: 40%;
+  }
+
+  #introduction-text {
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  #introduction-text > * {
+    margin-top: 1rem;
+  }
+
+  #introduction-text h2 {
+    margin-top: 0;
+  }
+
+  #featured-projects {
+    justify-content: space-around;
+  }
+
+  #featured-projects figure {
+    width: 30%;
+  }
+}
+
+@media(max-width: 500px) {
+  header {
+    align-items: center;
+    background-color: transparent;
+    border-style: none;
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  header nav {
+    flex-direction: column;
+  }
+
+  #featured-projects {
+    justify-content: space-between;
+  }
+
+  #featured-projects figure {
+    width: 45%;
+  }
+
+  #featured-projects figure:nth-of-type(n+7){
+    display: none;
+  }
+
+  #introduction {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #introduction-text {
+    margin-top: 1rem;
+  }
+
+  #featured-projects figure {
+    margin-bottom: 1rem;
+  }
+
+  #content {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+
+}
